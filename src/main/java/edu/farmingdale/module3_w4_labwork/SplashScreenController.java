@@ -3,18 +3,16 @@ package edu.farmingdale.module3_w4_labwork;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.event.ActionEvent;
-import javafx.scene.Node;
+import javafx.scene.image.ImageView;
 import java.io.IOException;
 
 public class SplashScreenController {
 
     @FXML
-    private void handleContinue(ActionEvent event) throws IOException {
-            Parent landingRoot = FXMLLoader.load(getClass().getResource("LandingScreen.fxml"));
-            Scene scene = ((Node) event.getSource()).getScene();
-            scene.setRoot(landingRoot);
+    private void Continue(ActionEvent event) throws IOException {
+        Scene scene = ((ImageView) event.getSource()).getScene();
+        scene.setRoot(new FXMLLoader(HelloApplication.class.getResource("landing_screen.fxml")).load());
     }
 }

@@ -12,6 +12,6 @@
                 <Image url="@Images/splash.png" />
             </image>
         </ImageView>
-        <Button layoutX="449.0" layoutY="456.0" onAction="#handleContinue" text="Continue" />
+        <Button layoutX="449.0" layoutY="456.0" onAction="#Continue" text="Continue" />
     </children>
 </AnchorPane>
